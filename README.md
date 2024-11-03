@@ -5,42 +5,55 @@ A simple yet effective sorting algorithm in `C++` using templates to support bot
 ## Features
 
 * Template-based implementation
-* Support for standard arrays
-* Support for vectors
-* Ascending and descending sort
-* Simple two-loop sorting algorithm
+* Two distinct sorting implementations:
+  * `vector_sort`: Specialized for std::vector
+  * `type_sort`: Works with standard arrays
+* Simple selection sort algorithm
+* Header-only implementation
+* Namespace organization for clean code structure
 
+## Usage Example
+```cpp
+#include "sort.h"
+#include <iostream>
+
+// Vector sorting example
+void vectorExample() 
+{
+    std::vector<uint32_t> nums = { 1, 7, 3, 8, 2 };
+    std::vector<uint32_t> sorted = Hollow::vector_sort::sort(nums);
+    for (int i = 0; i < nums.size(); i++)
+    {
+        printf("%d%s", sorted[i], " ");
+    }
+}
+
+// Array sorting example
+void arrayExample() 
+{
+    char arr[] = { 'a', 'c', 'f', 'b' };
+    int size = sizeof(arr) / sizeof(arr[0]);
+    Hollow::type_sort::sort(arr, size);
+
+    for (int i = 0; i < size; i++) 
+    {
+        std::cout << arr[i] << " ";
+    }
+}
+```
 ## Installation Guide
 
-### Prerequisites
+### Option 1: Direct Include
+   1. Download `sort.h`
+   2. Add it to your project
+   3. Include the header: `#include "sort.h"`
 
-* Git installed
-* G++ compiler installed
-* Command line terminal (Command Prompt, PowerShell, or Terminal)
-
-### Installation Steps
-
-1. Clone the project
+### Option 2: Git Clone
 ```bash
 git clone https://github.com/Ho11ow1/Sorting_algorithm
 ```
-2. Navigate to project directory
-```bash
-cd Sorting_algorithm
-```
-3. Compile the program
-```bash
-g++ Sorting_algorithm.cpp -o Sort
-```
-4. Run the program
-```bash
-./Sort
-```
 
 ### Troubleshooting
-
-If you encounter errors:
-* Make sure you're in the correct directory
-* Verify G++ is installed: `g++ --version`
-* Check if all source files exist
-* For Windows users, both `./Sort` and `.\Sort` will work
+* Ensure `sort.h` is in your include path
+* Check C++ version compatibility
+* Verify STL is available
