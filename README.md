@@ -30,7 +30,6 @@ cd Sorting_algorithm
 ```
 3. Compile the program
 ```bash
-# Compile using * for all cpp files and -I for all includes
 g++ Sorting_algorithm.cpp -o Sort
 ```
 4. Run the program
