@@ -7,7 +7,7 @@ void vector()
 
     for (int i = 0; i < nums.size(); i++)
     {
-        printf("%d%s", nums[i], " ");
+        printf("%d ", nums[i]);
     }
 }
 
@@ -19,7 +19,7 @@ void type()
 
     for (int i = 0; i < size; i++)
     {
-        printf("%c %s", arr[i], "");
+        printf("%c ", arr[i]);
     }
 }
 
