@@ -15,16 +15,16 @@ A simple yet effective sorting algorithm in `C++` using templates to support bot
 ## Usage Example
 ```cpp
 #include "sort.h"
-#include <iostream>
 
 // Vector sorting example
 void vectorExample() 
 {
     std::vector<uint32_t> nums = { 1, 7, 3, 8, 2 };
-    std::vector<uint32_t> sorted = Hollow::vector_sort::sort(nums);
+    Hollow::vector_sort::sort(nums);
+    
     for (int i = 0; i < nums.size(); i++)
     {
-        printf("%d%s", sorted[i], " ");
+        printf("%d%s", nums[i], " ");
     }
 }
 
@@ -37,7 +37,7 @@ void arrayExample()
 
     for (int i = 0; i < size; i++) 
     {
-        std::cout << arr[i] << " ";
+        printf("%c %s", arr[i], "");
     }
 }
 ```
