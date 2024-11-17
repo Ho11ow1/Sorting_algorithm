@@ -6,8 +6,8 @@ A simple yet effective sorting algorithm in `C++` using templates to support bot
 
 * Template-based implementation
 * Two distinct sorting implementations:
-  * `vector_sort`: Specialized for std::vector
-  * `type_sort`: Works with standard arrays
+  * `vector`: Specialized for std::vector
+  * `type`: Works with standard arrays
 * Simple selection sort algorithm
 * Header-only implementation
 * Namespace organization for clean code structure
@@ -24,7 +24,7 @@ void vectorExample()
     
     for (int i = 0; i < nums.size(); i++)
     {
-        printf("%d%s", nums[i], " ");
+        printf("%d ", nums[i]);
     }
 }
 
@@ -37,7 +37,7 @@ void arrayExample()
 
     for (int i = 0; i < size; i++) 
     {
-        printf("%c %s", arr[i], "");
+        printf("%c ", arr[i]);
     }
 }
 ```
