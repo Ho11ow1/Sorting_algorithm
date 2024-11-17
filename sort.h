@@ -6,7 +6,7 @@
 
 namespace Hollow
 {
-    namespace vector_sort
+    namespace vector
     {
         template<typename T>
         std::vector<T> sort(std::vector<T>& vec)
@@ -25,20 +25,7 @@ namespace Hollow
             return vec;
         }
     }
-    // Example for vector_sort
-    /*void vector()
-    {
-        std::vector<uint32_t> nums = { 1, 7, 3, 8, 2 };
-
-        std::vector<uint32_t> sorted = Hollow::vector_sort::sort(nums);
-
-        for (int i = 0; i < nums.size(); i++)
-        {
-            printf("%d%s", sorted[i], " ");
-        }
-    */
-
-    namespace type_sort
+    namespace type
     {
         template<typename T>
         T* sort(T arr[], int &size)
@@ -56,22 +43,6 @@ namespace Hollow
             return arr;
         }
     }
-    // Example for type_sort
-    /*void type()
-    {
-        char arr[] = { 'a', 'c', 'f', 'b' };
-
-        int size = sizeof(arr) / sizeof(arr[0]);
-
-        Hollow::type_sort::sort(arr, size);
-
-        for (int i = 0; i < size; i++)
-        {
-            printf("%c%s", arr[i], " ");
-            std::cout << arr[i] << " ";
-        }
-    }
-    */
 }
 
 #endif
