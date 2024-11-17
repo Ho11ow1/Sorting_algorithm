@@ -20,7 +20,7 @@ A simple yet effective sorting algorithm in `C++` using templates to support bot
 void vectorExample() 
 {
     std::vector<uint32_t> nums = { 1, 7, 3, 8, 2 };
-    Hollow::vector_sort::sort(nums);
+    Hollow::vector::sort(nums);
     
     for (int i = 0; i < nums.size(); i++)
     {
@@ -33,7 +33,7 @@ void arrayExample()
 {
     char arr[] = { 'a', 'c', 'f', 'b' };
     int size = sizeof(arr) / sizeof(arr[0]);
-    Hollow::type_sort::sort(arr, size);
+    Hollow::type::sort(arr, size);
 
     for (int i = 0; i < size; i++) 
     {
